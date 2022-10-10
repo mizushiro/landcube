@@ -164,7 +164,7 @@
             <div class="drag-area" style="width:300px;height:300px">
             </div>
             <div class="drag-footer">
-                <button type="button" class="btn-analysis">분석하기</button>
+                <button type="button" class="btn-analysis" data-layer="analysis-layer">분석하기</button>
                 <button type="button" class="btn_layer-close"><i class="btn-i-close"></i><span class="for-a11y">레이어팝업 닫기</span></button>
             </div>
         </div>
@@ -175,7 +175,7 @@
 
 <!-- S : 상세 layer -->
 <div id="detail-layer1" class="layer_section">
-    <div class="layer_section-container weight-content">
+    <div class="layer_section-container">
         <div class="layer-content">
             <h1 class="layer-content-title">토지정보</h1>
             <div class="table-view">
@@ -264,7 +264,7 @@
 </div>
 
 <div id="detail-layer2" class="layer_section">
-    <div class="layer_section-container weight-content">
+    <div class="layer_section-container">
         <div class="layer-content">
             <h1 class="layer-content-title">아파트 기준정보</h1>
             <div class="table-view">
@@ -333,6 +333,405 @@
     </div>
 </div>
 <!-- E : 상세 layer -->
+
+<!-- S : 분석하기 layer -->
+<div id="analysis-layer" class="layer_section">
+    <div class="layer_section-container analysis-content">
+        <div class="layer-content-header">
+            <h1><i class="btn-i-01"></i><span>필지명 | 아파트 단지명 | 도로명 주소 등이 표기되는 영역입니다.</span></h1>
+            <button type="button" class="btn-analysis-print"><i class="btn-i-02"></i>보고서</button>
+            <button type="button" class="btn_layer-close"><i class="btn-i-close"></i><span class="for-a11y">레이어팝업 닫기</span></button>
+        </div>
+        <div class="layer-content accordion-list">
+            <div class="accordion-group active">
+                <div class="accordion-title">
+                    <h2 class="layer-content-title2">1. 요약정보</h2>
+                    <button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+                </div>
+                <div class="detailed-index">
+                    <div class="box-group">
+                        <div class="box-col">
+                            <div class="box-item bg-type">
+                                <div class="box-title-area">
+                                    <h3 class="box-item-title">종합정보</h3>
+                                </div>
+                                <div class="box-item-content box-flex">
+                                    <div class="chart-box">
+                                    </div>
+                                    <div class="chart-detail-content">
+                                        <p class="total-score">아파트엔지수 <span>79</span>점</p>
+                                        <div class="score-list">
+                                            <div class="score-item">
+                                                <i class="score-type">A</i>
+                                                <span class="score-title">기준가격</span>
+                                                <span class="score-value">68</span>
+                                            </div>
+                                            <div class="score-item">
+                                                <i class="score-type">B</i>
+                                                <span class="score-title">기준가격</span>
+                                                <span class="score-value">68</span>
+                                            </div>
+                                            <div class="score-item">
+                                                <i class="score-type">C</i>
+                                                <span class="score-title">기준가격</span>
+                                                <span class="score-value">68</span>
+                                            </div>
+                                            <div class="score-item">
+                                                <i class="score-type">D</i>
+                                                <span class="score-title">기준가격</span>
+                                                <span class="score-value">68</span>
+                                            </div>
+                                            <div class="score-item">
+                                                <i class="score-type">E</i>
+                                                <span class="score-title">기준가격</span>
+                                                <span class="score-value">68</span>
+                                            </div>
+                                            <div class="score-item">
+                                                <i class="score-type">F</i>
+                                                <span class="score-title">기준가격</span>
+                                                <span class="score-value">68</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-20 box-item line-type">
+                                <h1 class="layer-content-title">토지정보</h1>
+                                <div class="table-view">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:70px">
+                                            <col style="width:calc((100% - 240px) / 3)">
+                                            <col style="width:80px">
+                                            <col style="width:calc((100% - 240px) / 3)">
+                                            <col style="width:90px">
+                                            <col style="width:calc((100% - 240px) / 3)">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">면적(m)</th>
+                                            <td>252723.7</td>
+                                            <th scope="row">소유구분 </th>
+                                            <td>개인</td>
+                                            <th scope="row">법정동명</th>
+                                            <td>서울특별시 영등포구 당산동4가</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">지목</th>
+                                            <td>대</td>
+                                            <th scope="row">지번 </th>
+                                            <td>30-1</td>
+                                            <th scope="row">데이터기준일자</th>
+                                            <td>2022-06-07</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h1 class="layer-content-title">건물정보</h1>
+                                <div class="table-view">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:70px">
+                                            <col style="width:calc((100% - 240px) / 3)">
+                                            <col style="width:80px">
+                                            <col style="width:calc((100% - 240px) / 3)">
+                                            <col style="width:90px">
+                                            <col style="width:calc((100% - 240px) / 3)">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">건물이름</th>
+                                            <td>논현동동양파라곤</td>
+                                            <th scope="row">건축면적</th>
+                                            <td>1130.39평</td>
+                                            <th scope="row">허가일</th>
+                                            <td>2001-04-24</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">주용도</th>
+                                            <td>공동주택</td>
+                                            <th scope="row">연면적</th>
+                                            <td>21,263,06평</td>
+                                            <th scope="row">착공일</th>
+                                            <td>2001-10-17</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">기타용도</th>
+                                            <td>공동주택</td>
+                                            <th scope="row">용적률산정연면적</th>
+                                            <td>13,031,94평</td>
+                                            <th scope="row">사용승인일</th>
+                                            <td>2004-06-02</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">대장종류</th>
+                                            <td>표제부</td>
+                                            <th scope="row">세대 수</th>
+                                            <td>203세대</td>
+                                            <th scope="row">가구수(가구)</th>
+                                            <td>0</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-col box-item map-type">
+                            <img src="/images/temp/@map.jpg" alt="">
+                            <div class="map-choice">
+                                <button type="button" class="btn-map-choice active">교통환경 </button>
+                                <button type="button" class="btn-map-choice">교육환경</button>
+                                <button type="button" class="btn-map-choice">생활편의</button>
+                                <button type="button" class="btn-map-choice">교육환경</button>
+                                <button type="button" class="btn-map-choice">생활편의</button>
+                                <button type="button" class="btn-map-choice">교육환경</button>
+                                <button type="button" class="btn-map-choice">생활편의</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-group">
+                <div class="accordion-title">
+                    <h2 class="layer-content-title2">2. 교육환경</h2>
+                    <button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+                </div>
+                <div class="detailed-index">
+                    <div class="box-list-a">
+                       <div class="box-item bg-type">
+                           <div class="box-title-area">
+                               <h3 class="box-item-title">종합정보 <span>90</span>점</h3>
+                               <button type="button" class="btn-compare">유사단지</button>
+                           </div>
+                           <div class="box-item-content">
+                               <div class="chart-box">
+
+                               </div>
+                           </div>
+                       </div>
+                        <div class="box-item line-type">
+                            <div class="table-view">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:calc(100% / 4)" span="4">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">평균값</th>
+                                        <th scope="col">최대값</th>
+                                        <th scope="col">최소값</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="dark-th">도시철도역사</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">나들목접근성</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">주유소접근성</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">전기차충전소</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-list-b mt-20">
+                        <div class="box-item">
+                            <div class="box-map-title">도시철도역사접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                        <div class="box-item">
+                            <div class="box-map-title">나들목접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                        <div class="box-item">
+                            <div class="box-map-title">도시철도접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-group">
+                <div class="accordion-title">
+                    <h2 class="layer-content-title2">3. 교통환경</h2>
+                    <button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+                </div>
+                <div class="detailed-index">
+                    <div class="box-list-a">
+                        <div class="box-item bg-type">
+                            <div class="box-title-area">
+                                <h3 class="box-item-title">종합정보 <span>90</span>점</h3>
+                                <button type="button" class="btn-compare">유사단지</button>
+                            </div>
+                            <div class="box-item-content">
+                                <div class="chart-box">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item line-type">
+                            <div class="table-view">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:calc(100% / 4)" span="4">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">평균값</th>
+                                        <th scope="col">최대값</th>
+                                        <th scope="col">최소값</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="dark-th">도시철도역사</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">나들목접근성</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">주유소접근성</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">전기차충전소</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-list-b mt-20">
+                        <div class="box-item">
+                            <div class="box-map-title">도시철도역사접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                        <div class="box-item">
+                            <div class="box-map-title">나들목접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                        <div class="box-item">
+                            <div class="box-map-title">도시철도접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-group">
+                <div class="accordion-title">
+                    <h2 class="layer-content-title2">4. 생활편의</h2>
+                    <button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+                </div>
+                <div class="detailed-index">
+                    <div class="box-list-a">
+                        <div class="box-item bg-type">
+                            <div class="box-title-area">
+                                <h3 class="box-item-title">종합정보 <span>90</span>점</h3>
+                                <button type="button" class="btn-compare">유사단지</button>
+                            </div>
+                            <div class="box-item-content">
+                                <div class="chart-box">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-item line-type">
+                            <div class="table-view">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:calc(100% / 4)" span="4">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">평균값</th>
+                                        <th scope="col">최대값</th>
+                                        <th scope="col">최소값</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" class="dark-th">도시철도역사</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">나들목접근성</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">주유소접근성</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="dark-th">전기차충전소</th>
+                                        <td>90</td>
+                                        <td>90</td>
+                                        <td>90</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-list-b mt-20">
+                        <div class="box-item">
+                            <div class="box-map-title">도시철도역사접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                        <div class="box-item">
+                            <div class="box-map-title">나들목접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                        <div class="box-item">
+                            <div class="box-map-title">도시철도접근성 : 72점</div>
+                            <img src="/images/temp/@map.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- E : 분석하기 layer -->
 
 
 <script type="text/javascript">

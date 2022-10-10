@@ -175,7 +175,7 @@ $(document).ready(function(){
         $('.nav-layer').toggleClass('active');
     });
 	// 아코디언
-	$('.box-detailed-index').uxeAccordionMenu({
+	$('.accordion-list').uxeAccordionMenu({
 		'clickedShowOnly': true,
 		'itemSelector' : '.accordion-group'
 	});
