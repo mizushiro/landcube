@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Land Cube</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, minimum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="landcube"/>
+	<script src="/js/jquery-1.12.4.min.js"></script>
+	<script src="/js/jquery-ui.js"></script>
+
+	<script src="/js/common.ui.js"></script>
+	<link rel="stylesheet" href="/css/swiper.css">
+	<link rel="stylesheet" href="/css/ui.landcube.css">
+</head>
+<body>
+<div class="main-wrap">
+    <div class="nav-box">
+        <div class="nav-content">
+            <h1><a href="" class="logo"></a></h1>
+            <nav class="nav">
+                <button class="nav-item" type="button">
+                    <i class="nav-i-01"></i>
+                    <span>필지분석</span>
+                </button>
+                <button class="nav-item" type="button">
+                    <i class="nav-i-02"></i>
+                    <span>아파트분석</span>
+                </button>
+                <button class="nav-item" type="button">
+                    <i class="nav-i-03"></i>
+                    <span>임의영역분석</span>
+                </button>
+            </nav>
+            <div class="nav-footer">
+                <button class="nav-item" type="button">
+                    <i class="nav-i-04"></i>
+                    <span>분석지도</span>
+                </button>
+            </div>
+        </div>
+        <div class="nav-layer">
+            <div class="nav-group">
+                <p class="nav-group-title">교통환경</p>
+                <button type="button" class="btn-nav-choice active">도시철도역사 접근성</button>
+                <button type="button" class="btn-nav-choice">전용도로 나들목 접근성</button>
+                <button type="button" class="btn-nav-choice">주유소 접근성</button>
+                <button type="button" class="btn-nav-choice">전기차 충전소 접근성</button>
+            </div>
+            <div class="nav-group">
+                <p class="nav-group-title">교육환경</p>
+                <button type="button" class="btn-nav-choice">어린이집 접근성</button>
+                <button type="button" class="btn-nav-choice">유치원 접근성</button>
+                <button type="button" class="btn-nav-choice">학구내 초등학교 접근성</button>
+                <button type="button" class="btn-nav-choice">학구내 중학교 접근성</button>
+                <button type="button" class="btn-nav-choice">학구내 고등하교 접근성</button>
+                <button type="button" class="btn-nav-choice">학원 접근성</button>
+            </div>
+            <div class="nav-group">
+                <p class="nav-group-title">생활편의</p>
+                <button type="button" class="btn-nav-choice">어린이집 접근성</button>
+                <button type="button" class="btn-nav-choice">유치원 접근성</button>
+                <button type="button" class="btn-nav-choice">학구내 초등학교 접근성</button>
+                <button type="button" class="btn-nav-choice">학구내 중학교 접근성</button>
+                <button type="button" class="btn-nav-choice">학구내 고등하교 접근성</button>
+                <button type="button" class="btn-nav-choice">학원 접근성</button>
+            </div>
+        </div>
+    </div>
+    <div class="map-box">
+        <img src="/images/temp/@map.jpg" alt="">
+        <!-- S : 검색 -->
+        <div class="box-sh">
+            <div class="sh-area">
+				<span class="box-icon">
+					<i class="ico-com sh-icon-a"></i>
+				</span>
+                <div class="sh-input"><input type="text" class="input-sh" placeholder="지역을 입력하세요.">
+                    <div class="box-sh-keyword" style="display:none">
+                        <div class="sh-keyword-item">
+                            <div class="move-map">
+                                <i class="sh-point-a"></i>
+                                <p class="keyword-value">
+                                    <span class="address-data">서울특별시 <span class="keyword">강남</span>구 강남대로 </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sh-keyword-item">
+                            <div class="move-map">
+                                <i class="sh-point-b"></i>
+                                <p class="keyword-value">
+                                    <span class="keyword-name"><span class="keyword">은마</span> 아파트</span>
+                                    <span class="address-data">서울특별시 강남구 강남대로 강남대로</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sh-keyword-item">
+                            <div class="move-map">
+                                <i class="sh-point-a"></i>
+                                <p class="keyword-value">
+                                    <span class="address-data">서울특별시 <span class="keyword">강남</span>구 강남대로 강남대로</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sh-keyword-item">
+                            <div class="move-map">
+                                <i class="sh-point-a"></i>
+                                <p class="keyword-value">
+                                    <span class="address-data">서울특별시 <span class="keyword">강남</span>구 강남대로 강남대로 </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sh-keyword-item">
+                            <div class="move-map">
+                                <i class="sh-point-a"></i>
+                                <p class="keyword-value">
+                                    <span class="address-data">서울특별시 <span class="keyword">강남</span>구 강남대로 강남대로 </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sh-keyword-item">
+                            <div class="move-map">
+                                <i class="sh-point-a"></i>
+                                <p class="keyword-value">
+                                    <span class="address-data">서울특별시 <span class="keyword">강남</span>구 강남대로 강남대로 </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E : 검색 -->
+
+        <!-- S : map control -->
+        <div class="box-map-control">
+            <div class="control-section">
+                <div class="btn-control-gorup">
+                    <button type="button" class="btn-control"><i class="ico-com sp-map-flight"></i><span class="for-a11y">항공</span></button>
+                </div>
+                <div class="btn-control-gorup">
+                    <button type="button" class="btn-control"><i class="ico-com sp-map-now"></i><span class="for-a11y">현재위치</span></button>
+                </div>
+                <div class="btn-control-gorup">
+                    <button type="button" class="btn-control"><i class="ico-com sp-map-expand"></i><span class="for-a11y">확대</span></button>
+                    <button type="button" class="btn-control"><i class="ico-com sp-map-reduce"></i><span class="for-a11y">축소</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- E : map control -->
+
+        <button class="marker-structure-a" style="position:absolute;left:520px;top:220px" data-layer="detail-layer1">
+            <!--<i class="icon-structure-a"></i>-->
+            <span class="structure-name">토지명</span>
+        </button>
+        <button class="marker-structure-a" style="position:absolute;left:400px;top:400px" data-layer="detail-layer2">
+            <!--<i class="icon-structure-a"></i>-->
+            <span class="structure-name">아파트명</span>
+        </button>
+
+        <!-- S : drag box -->
+        <div class="drag-box" style="position:absolute;left:600px;top:400px">
+            <div class="drag-area" style="width:300px;height:300px">
+            </div>
+            <div class="drag-footer">
+                <button type="button" class="btn-analysis">분석하기</button>
+                <button type="button" class="btn_layer-close"><i class="btn-i-close"></i><span class="for-a11y">레이어팝업 닫기</span></button>
+            </div>
+        </div>
+        <!-- E : drag box -->
+
+    </div>
+</div>
+
+<!-- S : 상세 layer -->
+<div id="detail-layer1" class="layer_section">
+    <div class="layer_section-container weight-content">
+        <div class="layer-content">
+            <h1 class="layer-content-title">토지정보</h1>
+            <div class="table-view">
+                <table>
+                    <colgroup>
+                        <col style="width:70px">
+                        <col style="width:calc((100% - 240px) / 3)">
+                        <col style="width:80px">
+                        <col style="width:calc((100% - 240px) / 3)">
+                        <col style="width:90px">
+                        <col style="width:calc((100% - 240px) / 3)">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">면적(m)</th>
+                        <td>252723.7</td>
+                        <th scope="row">소유구분 </th>
+                        <td>개인</td>
+                        <th scope="row">법정동명</th>
+                        <td>서울특별시 영등포구 당산동4가</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">지목</th>
+                        <td>대</td>
+                        <th scope="row">지번 </th>
+                        <td>30-1</td>
+                        <th scope="row">데이터기준일자</th>
+                        <td>2022-06-07</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h1 class="layer-content-title">건물정보</h1>
+            <div class="table-view">
+                <table>
+                    <colgroup>
+                        <col style="width:70px">
+                        <col style="width:calc((100% - 240px) / 3)">
+                        <col style="width:80px">
+                        <col style="width:calc((100% - 240px) / 3)">
+                        <col style="width:90px">
+                        <col style="width:calc((100% - 240px) / 3)">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">건물이름</th>
+                        <td>논현동동양파라곤</td>
+                        <th scope="row">건축면적</th>
+                        <td>1130.39평</td>
+                        <th scope="row">허가일</th>
+                        <td>2001-04-24</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주용도</th>
+                        <td>공동주택</td>
+                        <th scope="row">연면적</th>
+                        <td>21,263,06평</td>
+                        <th scope="row">착공일</th>
+                        <td>2001-10-17</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">기타용도</th>
+                        <td>공동주택</td>
+                        <th scope="row">용적률산정연면적</th>
+                        <td>13,031,94평</td>
+                        <th scope="row">사용승인일</th>
+                        <td>2004-06-02</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">대장종류</th>
+                        <td>표제부</td>
+                        <th scope="row">세대 수</th>
+                        <td>203세대</td>
+                        <th scope="row">가구수(가구)</th>
+                        <td>0</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="layer-content-footer">
+            <button type="button" class="btn-analysis"><i class="btn-i-01"></i>분석하기</button>
+            <button type="button" class="btn_layer-close"><i class="btn-i-close"></i><span class="for-a11y">레이어팝업 닫기</span></button>
+        </div>
+    </div>
+</div>
+
+<div id="detail-layer2" class="layer_section">
+    <div class="layer_section-container weight-content">
+        <div class="layer-content">
+            <h1 class="layer-content-title">아파트 기준정보</h1>
+            <div class="table-view">
+                <table>
+                    <colgroup>
+                        <col style="width:90px">
+                        <col style="width:calc((100% - 180px) / 2)">
+                        <col style="width:90px">
+                        <col style="width:calc((100% - 180px) / 2)">
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th scope="row">단지명</th>
+                        <td>서초트라팰리스</td>
+                        <th scope="row">세대수</th>
+                        <td>257 세대</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">주소</th>
+                        <td colspan="3">서울특별시 서초구 효령로72길 57 (서울특별시 서초구 서초동 1344-13 서초트라팰리스1차)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">면적구성(m<sup>2</sup>)</th>
+                        <td>73.42, 81.76, 87.97, 92.77, 95.58, 106.45, 107.69, 111.79, 116.3, 117.98, 121.71</td>
+                        <th scope="row">분양형태</th>
+                        <td>분양</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">사용승인일</th>
+                        <td>2005년 11월 18일</td>
+                        <th scope="row">난방형식</th>
+                        <td>개별난방</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">복도형식</th>
+                        <td>계단식</td>
+                        <th scope="row">시행사/시공사</th>
+                        <td>세화종합관리(주)/삼성물산</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">총주차대수</th>
+                        <td>527대 (지상: 0, 지하: 527)</td>
+                        <th scope="row">CCTV개수</th>
+                        <td>116개</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">관리사무소</th>
+                        <td colspan="3">Tel) 02-598-1344 / (Fax) 02-598-1393</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">부대시설</th>
+                        <td colspan="3">관리사무소, 노인정, 보육시설, 주민공동시설, 커뮤니티공간, 자전거보관소</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">학군정보</th>
+                        <td colspan="3">(초)서울서일초통학구역 (중)강남서초3학교군 (고)강남서초학교군</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="layer-content-footer">
+            <button type="button" class="btn-analysis"><i class="btn-i-01"></i>분석하기</button>
+            <button type="button" class="btn_layer-close"><i class="btn-i-close"></i><span class="for-a11y">레이어팝업 닫기</span></button>
+        </div>
+    </div>
+</div>
+<!-- E : 상세 layer -->
+
+
+<script type="text/javascript">
+	window.onload = function() {
+        landcube.callLayer();
+		tollTipLayer();
+	};
+</script>
+</body>
+</html>
