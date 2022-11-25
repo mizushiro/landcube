@@ -16,8 +16,9 @@
 </head>
 <body>
 <div class="print-wrap">
-    <div class="layer-content accordion-list">
-        <div class="accordion-group active page-a4">
+    <div class="page-a4">
+        <div class="page-wrap">
+            <div class="paging">1</div>
             <div class="page-title">
                 <h2>1. 요약정보</h2>
             </div>
@@ -164,24 +165,28 @@
                 </div>
             </div>
         </div>
+        
+    </div>
 
-        <div class="accordion-group active page-a4">
+    <div class="page-a4">
+        <div class="page-wrap">
+            <div class="paging">2</div>
             <div class="page-title">
                 <h2>2. 교육환경</h2>
             </div>
             <div class="detailed-index">
                 <div class="box-list-a">
-                   <div class="box-item bg-type">
-                       <div class="box-title-area">
-                           <h3 class="box-item-title">종합정보 <span>90</span>점</h3>
-                           <button type="button" class="btn-compare">유사단지</button>
-                       </div>
-                       <div class="box-item-content">
-                           <div class="chart-box">
+                    <div class="box-item bg-type">
+                        <div class="box-title-area">
+                            <h3 class="box-item-title">종합정보 <span>90</span>점</h3>
+                            <button type="button" class="btn-compare">유사단지</button>
+                        </div>
+                        <div class="box-item-content">
+                            <div class="chart-box">
 
-                           </div>
-                       </div>
-                   </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="box-item line-type">
                         <div class="table-view">
                             <table>
@@ -242,8 +247,11 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="accordion-group active page-a4">
+    <div class="page-a4">
+        <div class="page-wrap">
+            <div class="paging">3</div>
             <div class="page-title">
                 <h2>3. 교통환경</h2>
             </div>
@@ -320,11 +328,13 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="accordion-group active page-a4">
-            <div class="accordion-title">
-                <h2 class="layer-content-title2">4. 생활편의</h2>
-                <button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+    <div class="page-a4">
+        <div class="page-wrap">
+            <div class="paging">4</div>
+            <div class="page-title">
+                <h2>4. 생활편의</h2>
             </div>
             <div class="detailed-index">
                 <div class="box-list-a">
@@ -401,14 +411,11 @@
         </div>
     </div>
 </div>
-<!-- E : 분석하기 layer -->
 
+<div class="btn-fix-group">
+    <button class="btn-compare">인쇄</button>
+    <button class="btn-compare">PDF 다운로드</button>
+</div>
 
-<script type="text/javascript">
-	window.onload = function() {
-        landcube.callLayer();
-		tollTipLayer();
-	};
-</script>
 </body>
 </html>
