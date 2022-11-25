@@ -353,8 +353,9 @@ html.scroll_off {overflow:hidden}
 .page-a4 .box-item-content.box-flex .chart-box {height: 190px;}
 .page-a4 .box-item.map-type{height: 465px; border-color: #ccc; border-width: 1px; overflow: hidden !important;}
 .page-a4 .map-type .map-choice{padding: 8px 16px; background-color:rgba(255,255,255,0.8);}
-.page-a4 .map-choice .btn-map-choice{background-color: #fff; color:#000; border:1px solid #ccc;}
-.page-a4 .map-choice .btn-map-choice.active{font-weight: 900;}
+.page-a4 .map-choice .btn-map-choice{background-color: #f2f2f2; color:#000; border:1px solid #ccc;padding: 6px 12px 6px 12px;}
+.page-a4 .map-choice .btn-map-choice::before{display: none;}
+.page-a4 .map-choice .btn-map-choice.active{font-weight: 900;background-color: #fff;}
 .page-a4 .box-list-a .box-item.line-type{margin-top: 38px;}
 .page-a4 .table-view table th{background-color:#f2f2f2; color:#000; font-weight: 700; border-color: #ccc !important;}
 .page-a4 .table-view table td{background-color:#fff;border-color: #ccc !important;}
@@ -408,6 +409,7 @@ html.scroll_off {overflow:hidden}
 	
 	.page-a4 .mt-20{margin-top: 2rem;}
 	.page-a4 .box-item .chart-box{height: 24rem;}
+	.page-a4 .paging{bottom:14px; font-size:1.2rem;}
 
 	.page-a4 .box-item.map-type{height:40.5rem}
 	.page-a4 .box-list-b .box-item{height: 30.4rem;}
