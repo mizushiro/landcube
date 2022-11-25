@@ -338,8 +338,8 @@ html.scroll_off {overflow:hidden}
 .page-a4 .box-group .box-col{width: 100%;}
 .page-a4 .box-group{flex-direction: column;}
 .page-a4 .box-group .box-col .line-type{overflow: auto; max-height:100%;}
-.page-a4 .box-item{box-shadow: none; padding:0; overflow: hidden !important; border-radius: 0;}
-.page-a4 .box-item.line-type{border: 0; padding: 0;}
+.page-a4 .box-item{box-shadow: none; padding:0; overflow: hidden !important; border-radius: 0; background-color: #f1f1f1;}
+.page-a4 .box-item.line-type{border: 0; padding: 0; background-color: transparent;}
 .page-a4 .table-view table td{color:#000}
 .page-a4 .layer-content-title{color:#000; font-weight: 600; font-size: 14px;}
 .page-a4 .box-item-content.box-flex{gap:0; align-items: flex-start; }
@@ -356,7 +356,7 @@ html.scroll_off {overflow:hidden}
 .page-a4 .map-choice .btn-map-choice{background-color: #fff; color:#000; border:1px solid #ccc;}
 .page-a4 .map-choice .btn-map-choice.active{font-weight: 900;}
 .page-a4 .box-list-a .box-item.line-type{margin-top: 38px;}
-.page-a4 .table-view table th{background-color:#fff; color:#000; font-weight: 700; border-color: #ccc !important;}
+.page-a4 .table-view table th{background-color:#f2f2f2; color:#000; font-weight: 700; border-color: #ccc !important;}
 .page-a4 .table-view table td{background-color:#fff;border-color: #ccc !important;}
 .page-a4 .table-view table{border-color: #ccc !important;}
 .page-a4 .box-list-b .box-map-title{font-size: 14px; background-color:rgba(255,255,255,0.8); padding:8px; height: auto; color:#000}
@@ -366,6 +366,7 @@ html.scroll_off {overflow:hidden}
 .page-a4 .btn-compare {font-weight: 500; border:1px solid #ccc}
 .btn-fix-group .btn-compare {font-weight: 500; border:1px solid #ccc}
 .page-a4 .box-item-content.box-flex .chart-box{background-color: #ccc;}
+
 @page {
     size: A4;
     margin: 0;
@@ -410,4 +411,6 @@ html.scroll_off {overflow:hidden}
 
 	.page-a4 .box-item.map-type{height:40.5rem}
 	.page-a4 .box-list-b .box-item{height: 30.4rem;}
+	.page-a4 .box-list-a .btn-compare{display: none;}
+	.page-a4 .box-list-a .box-item.line-type{margin-top: 3rem;}
 } 
